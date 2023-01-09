@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #05292E;
+  color: white;
+}
+.rickandMorty{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rickandMorty > input{
+  width: calc(100% - 200px);
+  margin: auto;
+  height: 30px;
+  
+}
+.rickandMorty > button{
+  height: 50px;
+  width: 240px;
+  margin: auto;
+  border: 0;
+  box-shadow: 2px 3px 8px black;
+  border-radius: 8px;
+  color:  white;
+  background: #062226;
+}
+.rickandMorty > button:hover{
+  scale: 115%;
+
+}
+.rickandMorty > h1{
+  text-align: center;
+}
+.rickandMorty > .InfoLocation{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  gap: 20px;
+  justify-content: space-around;
+  background: #062226;
+}
+.banner{
+  
+  height: 240px;
+}
+.Resident_Info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+ 
+}
+.Resident_Info > div{
+  width: 237px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+.Resident_Info >div > img{
+  height:202px ;
+}
