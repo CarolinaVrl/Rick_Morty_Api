@@ -1,25 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import RickandMorty from './Components/RickandMorty'
-import ResidentInfo from './Components/ResidentInfo'
-import Banner from './Components/Banner'
+import "./App.css";
+
 
 function App() {
- 
-
-  return (
-    <div className="App">
-      <Banner />
-      <RickandMorty />
-      <div className='Container_ResidentInfo'>
-       <ResidentInfo />
-      </div>
-      
-      
-      
-    </div>
-  )
+  return <div className="App"></div>;
 }
 
-export default App
+export default App;
