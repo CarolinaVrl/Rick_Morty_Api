@@ -1,3 +1,15 @@
+
+
+:root{
+    --fontDarkGreen:#062226;
+    --fontGree:#05292E;
+    --letter:#FBFBFB;
+    --gray:#7E7E7E;
+    --red:#B94343;
+    --lightGreen:#4AB648
+}
+
+
 *{
     margin: 0;
     padding: 0;
