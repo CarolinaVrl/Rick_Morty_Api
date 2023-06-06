@@ -5,6 +5,7 @@ import axios from "axios";
 function App() {
   const id = Math.round(Math.random() * 126);
   const [location, setLocation] = useState([]);
+  
   useEffect(()=>{
     axios.get(`https://rickandmortyapi.com/api/location/${id}`)
     .then(res => setLocation(res.data))
@@ -29,6 +30,9 @@ function App() {
           <h2>Población</h2>
           <p>{location.residents?.length}</p>
         </div>
+      </section>
+      <section>
+        <input type="text"  />
       </section>
       
     </div>
