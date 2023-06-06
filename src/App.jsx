@@ -12,7 +12,24 @@ function App() {
   console.log(location);
   return (
     <div className="App">
-      <h1>{id}</h1>
+      <section>
+        <div>
+          <h2>Nombre:</h2>
+          <p>{location.name}</p>
+        </div>
+        <div>
+          <h2>Tipo:</h2>
+          <p>{location.type}</p>
+        </div>
+        <div>
+          <h2>Dimensión:</h2>
+          <p>{location.dimension}</p>
+        </div>
+        <div>
+          <h2>Población</h2>
+          <p>{location.residents?.length}</p>
+        </div>
+      </section>
       
     </div>
   );
