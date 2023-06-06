@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import ResidentInfo from "./Components/ResidentInfo";
 
 function App() {
   const id = Math.round(Math.random() * 126);
@@ -33,6 +34,16 @@ function App() {
       </section>
       <section>
         <input type="text"  />
+      </section>
+      <section>
+        {
+          location.residents?.map(resident=>(
+            <div key={resident}>
+              <ResidentInfo  url={resident}/>
+            </div>
+          
+          ))
+        }
       </section>
       
     </div>
