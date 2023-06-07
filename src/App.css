@@ -52,6 +52,9 @@
   padding: 10px 32px;
   width: 100%;
 }
+input:focus{
+  outline: none;
+}
 .search button {
   width: 85px;
   border: 1px solid var(--white);
