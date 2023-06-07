@@ -32,9 +32,9 @@ function App() {
           <p>{location.residents?.length}</p>
         </div>
       </section>
-      <section>
+      <section className="search">
         <input type="text"  />
-        <button>Buscar</button>
+        <button >Buscar</button>
       </section>
       <section>
         {

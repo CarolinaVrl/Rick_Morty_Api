@@ -41,9 +41,27 @@
   font-size: 18px;
   font-weight: 700;
 }
-
-.App input{
+.search{
+    display: flex;
     width: 100%;
+    padding: 0 32px;
+    
+  
+}
+.search input{
+    
+    border: none;
+    padding: 10px 32px;
+    width: 100%;
+   
+}
+.search button{
+    width: 85px;
+    border: 1px solid var(--white);
+    background: var(--fontDarkGreen);
+    border-radius:0  20px 20px 0;
+    color: var(--white);
+    font-size: 16px;
 }
 
 @media screen and (min-width: 900px) {
