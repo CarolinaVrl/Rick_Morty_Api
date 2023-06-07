@@ -10,19 +10,20 @@ const ResidentInfo = ({ url }) => {
   return (
     <div className="resident">
       <img src={resident.image} alt="" />
+      <h2>{resident.name}</h2>
       <hr />
-      <section>
+      <section className="container_info">
         <div>
-          <p>Raza</p>
-          <p>{resident.species}</p>
+          <p className="title">Raza</p>
+          <p className="info">{resident.species}</p>
         </div>
         <div>
-          <p>Origen</p>
-          <p>{resident.origin?.name}</p>
+          <p className="title">Origen</p>
+          <p className="info">{resident.origin?.name}</p>
         </div>
         <div>
-          <p>Aparición en episodios</p>
-          <p>{resident.episode?.length}</p>
+          <p className="title">Aparición en episodios</p>
+          <p className="info">{resident.episode?.length}</p>
         </div>
       </section>
 

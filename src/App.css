@@ -66,11 +66,38 @@
 
 }
 
+
 /* ------Resident Info ------- */
 
 .resident{
-    
     position: relative;
+    width: 250px;
+    border-radius: 10px;
+    background: var(--fontDarkGreen);
+}
+.resident img{
+    width: 250px;
+}
+.resident h2{
+    padding: 24px 0;
+    color: var(--letter);
+}
+.container_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 24px;
+    
+}
+.title{
+    color: var(--gray);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+.info{
+    color: var(--letter);
+    font-size: 16px;
 }
 
 .status{
@@ -88,6 +115,7 @@
     width: 19px;
     height: 19px;
     background: var(--lightGreen);
+    
     border-radius: 50%;
 
 }
