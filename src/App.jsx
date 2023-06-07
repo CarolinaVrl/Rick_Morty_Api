@@ -14,7 +14,7 @@ function App() {
   console.log(location);
   return (
     <div className="App">
-      <section>
+      <section className="details_location">
         <div>
           <h2>Nombre:</h2>
           <p>{location.name}</p>
