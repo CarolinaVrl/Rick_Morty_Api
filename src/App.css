@@ -42,6 +42,10 @@
   font-weight: 700;
 }
 
+.App input{
+    width: 100%;
+}
+
 @media screen and (min-width: 900px) {
   .App {
     padding: 50px 200px;

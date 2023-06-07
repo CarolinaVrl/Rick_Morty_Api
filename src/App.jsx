@@ -34,6 +34,7 @@ function App() {
       </section>
       <section>
         <input type="text"  />
+        <button>Buscar</button>
       </section>
       <section>
         {
