@@ -12,12 +12,14 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .App {
   background: var(--fontGreen);
   margin: 0 auto;
-  height: 100vh;
+  
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -27,8 +29,7 @@
   color: var(--white);
   display: flex;
   background: var(--fontDarkGreen);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
   width: 100%;
   justify-content: space-between;
   padding: 32px;
@@ -41,83 +42,92 @@
   font-size: 18px;
   font-weight: 700;
 }
-.search{
-    display: flex;
-    width: 100%;
-    padding: 0 32px;
-    
-  
+.search {
+  display: flex;
+  width: 100%;
+  padding: 0 32px;
 }
-.search input{
-    
-    border: none;
-    padding: 10px 32px;
-    width: 100%;
-   
+.search input {
+  border: none;
+  padding: 10px 32px;
+  width: 100%;
 }
-.search button{
-    width: 85px;
-    border: 1px solid var(--white);
-    background: var(--fontDarkGreen);
-    border-radius:0  20px 20px 0;
-    color: var(--white);
-    font-size: 16px;
-    
-
+.search button {
+  width: 85px;
+  border: 1px solid var(--white);
+  background: var(--fontDarkGreen);
+  border-radius: 0 20px 20px 0;
+  color: var(--white);
+  font-size: 16px;
 }
 
+.container_card {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
 
 /* ------Resident Info ------- */
 
-.resident{
-    position: relative;
-    width: 250px;
-    border-radius: 10px;
-    background: var(--fontDarkGreen);
+.resident {
+  position: relative;
+  width: 250px;
+  border-radius: 10px;
+  background: var(--fontDarkGreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.resident img{
-    width: 250px;
+hr {
+  width: 90%;
+  height: 1px;
+  background: var(--gray);
+  border: none;
 }
-.resident h2{
-    padding: 24px 0;
-    color: var(--letter);
+.resident img {
+  width: 250px;
+  border-radius: 10px 10px 0 0;
 }
-.container_info{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 24px;
-    
+.resident h2 {
+  padding: 12px 0;
+  font-weight: 500;
+  color: var(--letter);
+  padding: 0 24px;
 }
-.title{
-    color: var(--gray);
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
+.container_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 24px;
 }
-.info{
-    color: var(--letter);
-    font-size: 16px;
+.title {
+  color: var(--gray);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.info {
+  color: var(--letter);
+  font-size: 16px;
 }
 
-.status{
-    position: absolute;
-    top: 20px;
-    width: 20%;
-    background: var(--fontDarkGreen);
-    color: var(--white);
-    display: flex;
-    padding: 5px 10px;
-    border-radius: 0 10px 10px 0;
-    gap: 10px;
+.status {
+  position: absolute;
+  top: 20px;
+  background: var(--fontDarkGreen);
+  color: var(--white);
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 0 10px 10px 0;
+  gap: 10px;
+  left: 0;
 }
-.circle{
-    width: 19px;
-    height: 19px;
-    background: var(--lightGreen);
-    
-    border-radius: 50%;
-
+.circle {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 900px) {

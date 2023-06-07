@@ -36,7 +36,7 @@ function App() {
         <input type="text"  />
         <button type="button">Buscar</button>
       </section>
-      <section className="container card">
+      <section className="container_card">
         {
           location.residents?.map(resident=>(
             <div key={resident}>
