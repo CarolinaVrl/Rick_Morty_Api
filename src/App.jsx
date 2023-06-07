@@ -4,13 +4,14 @@ import axios from "axios";
 import ResidentInfo from "./Components/ResidentInfo";
 
 function App() {
-  const id = Math.round(Math.random() * 126);
+  const [id, setId]= useState(Math.round(Math.random() * 126));
+  const [value, setValue] = useState("")
   const [location, setLocation] = useState([]);
   
   useEffect(()=>{
     axios.get(`https://rickandmortyapi.com/api/location/${id}`)
     .then(res => setLocation(res.data))
-  },[])
+  },[id])
   console.log(location);
   return (
     <div className="App">
@@ -33,8 +34,8 @@ function App() {
         </div>
       </section>
       <section className="search">
-        <input type="text"  />
-        <button type="button">Buscar</button>
+        <input type="text" value={value} onChange={(e)=>setValue(e.target.value)}  />
+        <button onClick={()=>setId(value)} type="button">Buscar</button>
       </section>
       <section className="container_card">
         {
