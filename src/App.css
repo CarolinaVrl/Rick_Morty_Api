@@ -62,6 +62,34 @@
     border-radius:0  20px 20px 0;
     color: var(--white);
     font-size: 16px;
+    
+
+}
+
+/* ------Resident Info ------- */
+
+.resident{
+    
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    top: 20px;
+    width: 20%;
+    background: var(--fontDarkGreen);
+    color: var(--white);
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 0 10px 10px 0;
+    gap: 10px;
+}
+.circle{
+    width: 19px;
+    height: 19px;
+    background: var(--lightGreen);
+    border-radius: 50%;
+
 }
 
 @media screen and (min-width: 900px) {

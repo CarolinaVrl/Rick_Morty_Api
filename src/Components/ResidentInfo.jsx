@@ -8,24 +8,26 @@ const ResidentInfo = ({ url }) => {
   }, []);
 
   return (
-    <div>
+    <div className="resident">
       <img src={resident.image} alt="" />
       <hr />
-      <div>
-        <p>Raza</p>
-        <p>{resident.species}</p>
-      </div>
-      <div>
-        <p>Origen</p>
-        <p>{resident.origin?.name}</p>
-      </div>
-      <div>
-        <p>Aparición en episodios</p>
-        <p>{resident.episode?.length}</p>
-      </div>
-  
+      <section>
+        <div>
+          <p>Raza</p>
+          <p>{resident.species}</p>
+        </div>
+        <div>
+          <p>Origen</p>
+          <p>{resident.origin?.name}</p>
+        </div>
+        <div>
+          <p>Aparición en episodios</p>
+          <p>{resident.episode?.length}</p>
+        </div>
+      </section>
 
-      <div>
+      <div className="status">
+        <div className={`circle`}></div>
         <p>{resident.status}</p>
       </div>
     </div>
