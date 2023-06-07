@@ -28,7 +28,7 @@ function App() {
           <p>{location.dimension}</p>
         </div>
         <div>
-          <h2>Población</h2>
+          <h2>Población:</h2>
           <p>{location.residents?.length}</p>
         </div>
       </section>
