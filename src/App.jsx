@@ -34,7 +34,7 @@ function App() {
         </div>
       </section>
       <section className="search">
-        <input type="text" value={value} onChange={(e)=>setValue(e.target.value)}  />
+        <input type="text" placeholder="Dimensiones del 1 - 126" value={value} onChange={(e)=>setValue(e.target.value)}  />
         <button onClick={()=>setId(value)} type="button">Buscar</button>
       </section>
       <section className="container_card">
